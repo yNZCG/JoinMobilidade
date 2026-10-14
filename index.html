@@ -77,7 +77,10 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:va
 @media (max-width:820px){.hero-grid{grid-template-columns:1fr}.clock{max-width:420px}}
 
 /* ideia central */
-.idea{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.idea{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.box.best{background:var(--white);color:var(--ink);border:3px solid var(--teal)}
+.box.best .label{color:var(--teal)}
+.box.best li b{background:var(--teal);color:var(--white)}
 .idea .box{border-radius:24px;padding:30px;display:grid;gap:12px;align-content:start}
 .box.old{background:var(--mint);color:var(--muted)}
 .box.new{background:var(--teal);color:var(--white)}
@@ -87,7 +90,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:va
 .box.old li b{background:var(--white);color:var(--muted)}
 .box.new li b{background:var(--white);color:var(--teal)}
 .label{font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.75em}
-@media (max-width:760px){.idea{grid-template-columns:1fr}}
+@media (max-width:900px){.idea{grid-template-columns:1fr}}
 
 .head{display:grid;gap:12px;max-width:700px;margin-bottom:34px}
 .head p{color:var(--muted)}
@@ -230,23 +233,32 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <h2>Semelhante a Uber, mas com carros adaptados</h2>
       </div>
       <div class="idea">
-        <div class="box old">
-          <span class="label">Com Agendamento</span>
+        <div class="box new">
+          <span class="label">Com agendamento</span>
           <ul>
-            <li><b>✕</b>O carro chega no horário marcado</li>
-            <li><b>✕</b>Ida e volta já combinado</li>
-            <li><b>✕</b>Sem espera</li>
-            <li><b>✕</b>Disponível 24 horas</li>
+            <li><b>✓</b>O carro chega no horário marcado</li>
+            <li><b>✓</b>Ida e volta já combinado</li>
+            <li><b>✓</b>Sem espera</li>
+            <li><b>✓</b>Disponível 24 horas</li>
           </ul>
         </div>
-        <div class="box new">
-          <span class="label">Sem Agendamento</span>
+        <div class="box old">
+          <span class="label">Sem agendamento</span>
           <ul>
-            <li><b>✓</b>Carro pode demorar de 15 a 20 minutos para chegar</li>
-            <li><b>✓</b>Espera do carro no retorno </li>
-            <li><b>✓</b>Pode ser que não tenha carro disponível</li>
-            <li><b>✓</b>Fazemos de tudo para conseguir atender</li>
+            <li><b>•</b>Carro pode demorar de 15 a 20 minutos para chegar</li>
+            <li><b>•</b>Espera do carro no retorno</li>
+            <li><b>•</b>Pode ser que não tenha carro disponível</li>
+            <li><b>•</b>Fazemos de tudo para conseguir atender</li>
+            <li><b>•</b>Disponível 24 horas</li>
+          </ul>
+        </div>
+        <div class="box best">
+          <span class="label">Com a Mobilidade</span>
+          <ul>
+            <li><b>✓</b>Carros adaptados para cadeirantes e pessoas com mobilidade reduzida</li>
+            <li><b>✓</b>Você pode solicitar um agendamento ou chamar na hora</li>
             <li><b>✓</b>Disponível 24 horas</li>
+            <li><b>✓</b>Tudo pensado para o seu melhor conforto e segurança</li>
           </ul>
         </div>
       </div>
