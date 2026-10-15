@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
 <meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mobilidade Transporte Adaptado</title>
 <meta name="description" content="Transporte de cadeirantes com hora marcada em Brasília. Agende pelo WhatsApp (61) 99639-6250: diga onde embarca, para onde vai, o dia e os horários de ida e volta.">
@@ -218,6 +219,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   .float-wa svg{width:36px;height:36px}
   footer{padding-bottom:110px}
 }
+a.num,a[href^="tel"],a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -245,7 +247,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p class="lead">Agende sua viagem e nós buscamos você na porta da sua casa, com conforto e segurança, sem precisar ficar esperando na calçada!</p>
         <div class="cta">
           <a class="btn btn-wa" id="cta-hero" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
-          <span class="num">(61) 99639-6250</span>
+          <a class="num" href="tel:+5561996396250">(61) 99639-6250</a>
         </div>
         <p class="open24"><i></i>Funcionamento 24 horas</p>
         <div class="stats">
