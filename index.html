@@ -187,6 +187,19 @@ footer{padding-block:32px 96px;color:var(--muted);font-size:.9em}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .float-wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;width:68px;height:68px;border-radius:50%;background:var(--wa);color:var(--white);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .float-wa svg{width:36px;height:36px}
+/* celular: letra maior */
+@media (max-width:700px){
+  :root{--base:1.4rem}
+  html.big{--base:1.7rem}
+  .hero h1{font-size:2.6rem}
+  h2{font-size:2.1rem}
+  .a11y{font-size:1.1rem}
+  .screen{font-size:17px}
+  .phone .msg,.phone .reply{font-size:16.5px}
+  .phone{width:100%;max-width:380px}
+  .btn{font-size:.9em;padding:0 16px;gap:10px;max-width:100%}
+  .btn svg{width:26px;height:26px}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
