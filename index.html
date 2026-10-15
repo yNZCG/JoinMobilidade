@@ -109,9 +109,9 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:va
 .steps li::before{content:counter(s);width:56px;height:56px;border-radius:50%;background:var(--teal);color:var(--white);font-family:var(--display);font-weight:800;font-size:1.5em;display:grid;place-items:center}
 .steps p{color:var(--muted)}
 /* celular */
-.phone{justify-self:center;width:min(340px,100%);aspect-ratio:9/19;max-width:100%;background:#111;border-radius:48px;padding:12px;box-shadow:0 30px 60px rgba(10,43,40,.28),inset 0 0 0 2px #333;position:relative}
+.phone{justify-self:center;width:min(340px,100%);max-width:100%;background:#111;border-radius:48px;padding:12px;box-shadow:0 30px 60px rgba(10,43,40,.28),inset 0 0 0 2px #333;position:relative}
 .phone::before{content:"";position:absolute;right:-4px;top:120px;width:4px;height:70px;background:#222;border-radius:0 3px 3px 0}
-.screen{height:100%;border-radius:38px;overflow:hidden;display:flex;flex-direction:column;background:#efe7dd;font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.4}
+.screen{border-radius:38px;overflow:hidden;display:flex;flex-direction:column;background:#efe7dd;font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.4}
 .status{background:#0b5f57;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 26px 4px;font-size:13px;font-weight:600;position:relative}
 .status::after{content:"";position:absolute;left:50%;top:9px;transform:translateX(-50%);width:90px;height:24px;background:#111;border-radius:14px}
 .status .ic{display:flex;gap:5px;align-items:center}
@@ -121,7 +121,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:va
 .wa-top img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:contain}
 .wa-top b{display:block;font-size:16px}
 .wa-top small{font-size:12px;opacity:.85}
-.chat{flex:1;padding:12px 10px;display:flex;flex-direction:column;gap:8px;overflow:hidden;background-color:#efe7dd;background-image:radial-gradient(rgba(11,95,87,.06) 1px,transparent 1px);background-size:14px 14px}
+.chat{padding:14px 10px 28px;min-height:360px;display:flex;flex-direction:column;gap:8px;overflow:hidden;background-color:#efe7dd;background-image:radial-gradient(rgba(11,95,87,.06) 1px,transparent 1px);background-size:14px 14px}
 .day{align-self:center;background:#fff;color:#556;font-size:12px;padding:4px 10px;border-radius:8px}
 .input{display:flex;gap:8px;align-items:center;padding:8px 10px 14px;background:#efe7dd}
 .input div{flex:1;background:#fff;border-radius:22px;padding:10px 14px;color:#889;font-size:14px}
@@ -207,7 +207,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   .clock img{width:150px}
   .clock .when{font-size:1.6em}
   .hero{padding-block:36px 48px}
-  .phone{width:100%;max-width:360px}
+  .phone{width:min(330px,100%);border-radius:42px;padding:10px}
+  .screen{border-radius:34px}
+  .chat{min-height:0;padding:12px 12px 20px}
+  .phone .msg{max-width:90%}
+  .msg dl{gap:4px 8px}
   .btn{font-size:1.05em;padding:0 18px;gap:10px;max-width:100%;min-height:56px}
   .btn svg{width:26px;height:26px}
   .float-wa{width:66px;height:66px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
