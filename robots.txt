@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mobilidadecarroadaptado.com.br/sitemap.xml
